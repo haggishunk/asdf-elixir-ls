@@ -32,6 +32,7 @@ function install() {
   ln -s ../language_server.sh ./bin/elixir-ls
   [[ -f ../debugger.sh ]] && ln -s ../debugger.sh ./bin/elixir-ls-debugger
   [[ -f ../debug_adapter.sh ]] && ln -s ../debug_adapter.sh ./bin/debug_adapter
+  [[ -f ../launch.sh ]] && ln -s ../launch.sh ./bin/launch.sh
   cp -fpr * "${install_path}"
 
   popd >/dev/null
